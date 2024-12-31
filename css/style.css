@@ -707,7 +707,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .blue-link {
-    line-height: 1.33333;
+    line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
@@ -723,4 +723,119 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     fill: transparent;
     cursor: pointer;
+    margin-right: 8px;
+}
+
+.checkbox:checked + .label-checkbox .custom-checkbox{
+    background-color: #404bbf;
+    border: 1px solid #404bbf;
+    fill: #f4f4fd;
+}
+
+.form-checkbox {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.button-form {
+    border: none;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-form:hover,
+.button-form:focus {
+    background-color: #404bbf;
+}
+
+.email-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 80px;
+}
+
+.button-input-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.email-footer {
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #2e2f42;
+    padding: 8px 16px;
+}
+
+.email-footer-label{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.email-footer::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+
+.button-subscribe {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color: #404bbf;
+}
+
+.icon-subscribe{
+    fill: #fff;
+    display: inline-block;
+
 }
