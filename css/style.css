@@ -581,7 +581,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal {
     border-radius: 4px;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     box-shadow: 
     0 1px 1px 0 rgba(0, 0, 0, 0.14), 
     0 1px 3px 0 rgba(0, 0, 0, 0.12), 
@@ -593,6 +593,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform:(translate -50% -50%);
     padding: 24px;
     padding-top: 72px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-text {
@@ -610,28 +611,28 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: absolute;
     right: 24px;
     top: 24px;
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: #e7e9fc;
-    stroke-width: 1px;
-    stroke: #2e2f42;
     width: 24px;
     height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
 }
 
 .icon-close{
     fill: #2e2f42;
-    width: 8px;
-    height: 8px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
 .modal-close:focus {
     background-color:#404bbf;
+    border: none;
 }
 
 .modal-close:hover .icon-close,
@@ -644,12 +645,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-user-label{
     display: block;
-    margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
 }
 
 .form-user-input{
@@ -659,7 +654,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     padding-left: 38px;
     outline: none;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    outline: transparent;
 }
 .form-user-input:focus {
     border: 1px solid #4d5ae5;
@@ -671,6 +668,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-user-icon-wrapper{
     position:relative;
+    margin-bottom: 16px
 }
 
 .form-user-icon {
@@ -684,17 +682,23 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-comment {
     width: 100%;
-    min-height: 138px;
-    resize: none;
-    border-radius: 4px;
+    height: 120px;
+    font-size: 12px; 
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
     padding: 8px 16px;
+    outline: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
 }
 
 .form-comment:focus {
-    border: 1px solid #4d5ae5;
-    outline: none;
+    border-color:  #4d5ae5;
 }
 
 .form-comment::placeholder {
@@ -711,7 +715,12 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration-skip-ink: none;
     color: #4d5ae5;
 }
-
+.label-checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8e8f99;
+}
 .custom-checkbox{
     width: 16px; 
     height: 16px;
@@ -781,6 +790,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    fill: #fff;
 }
 
 .subscribe {
@@ -805,6 +815,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-family: "Roboto", sans-serif;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 16px;
     border-radius: 4px;
     border: none;
