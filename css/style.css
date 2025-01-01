@@ -690,7 +690,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 8px 16px;
-
 }
 
 .form-comment:focus {
@@ -771,54 +770,48 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #404bbf;
 }
 
-.email-footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-left: 80px;
-}
-
-.button-input-wrapper{
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
 .email-footer {
-    border: 1px solid #fff;
-    border-radius: 4px;
     width: 264px;
     height: 40px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #2e2f42;
-    padding: 8px 16px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
-.email-footer-label{
+.subscribe {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
+    padding-left: 24px;
 }
 
+.form-email-footer{
+    display: flex;
+    gap: 24px;
+}
 .email-footer::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
     color: #fff;
 }
 
 .button-subscribe {
-    display: inline-flex;
+    font-family: "Roboto", sans-serif;
+    display: flex;
     align-items: center;
     gap: 16px;
     border-radius: 4px;
     border: none;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
-    background: #4d5ae5;
+    background-color: #4d5ae5;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -835,7 +828,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-subscribe{
+    margin-left: 16px;
     fill: #fff;
-    display: inline-block;
-
 }
